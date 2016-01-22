@@ -18,7 +18,7 @@
 
         if (global.protractor)
         {
-            deferred.fulfill = deferred.resolve;
+            deferred.resolve = deferred.fulfill;
         }
 
         var body = (typeof jsonBody === "string" ? jsonBody : JSON.stringify(jsonBody || ""));
